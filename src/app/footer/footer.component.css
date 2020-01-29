@@ -1,0 +1,27 @@
+footer {
+  background-color: #000;
+}
+p {
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #efefef;
+  text-align: center;
+  padding: 0.15em;
+  font-family: "Roboto";
+  font-size: 0.75em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+p a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+p a:hover,
+p a:visited {
+  color: rgb(211, 207, 207);
+  text-decoration: none;
+}

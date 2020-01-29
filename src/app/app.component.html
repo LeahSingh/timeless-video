@@ -1,0 +1,37 @@
+<mat-toolbar color="primary" class="navbar">
+  <div class="tl-logo">
+    Timeless Video Productions
+  </div>
+  <div>
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link [routerLink]="['home']">
+        Home
+      </a>
+      <a mat-tab-link [routerLink]="['about']">
+        About
+      </a>
+      <a mat-tab-link [routerLink]="['services']">
+        Services
+      </a>
+      <a mat-tab-link [routerLink]="['blog']">Blog</a>
+      <a mat-tab-link [routerLink]="['contact-us']">Contact Us</a>
+      <!-- a mat-tab-link [routerLink]="login" id="login">Login</!-- a -->
+    </nav>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>
+<!-- FOR YOUTUBE VIDEO UPLOADS-->
+<div class="video-background">
+  <div class="video-foreground">
+    <iframe
+      width="auto"
+      height="auto"
+      src="https://www.youtube.com/embed/1IwxaDgJ7d8?autoplay=1&mute=1&loop=1"
+      frameborder="0"
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe
+    >"
+  </div>
+</div>
+<app-footer></app-footer>

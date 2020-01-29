@@ -1,0 +1,63 @@
+<div class="container-flex content-bkgd p-2 m-2">
+  <h2 class="text-center">Contact Us</h2>
+  <div class="row justify-content-center">
+    <div></div>
+
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4 m-5">
+      <p>
+        Describe the type of video and be as specific as you can. For example –
+        Commercial video, Wedding video, Baby Shower video, etc.
+      </p>
+      <p>
+        Describe a brief idea if you have one, or send us the script. State
+        deadlines if it’s urgent.
+      </p>
+
+      <p>
+        You can also reach out at <a href="tel:+15045552368">504.777.7777</a>.
+      </p>
+    </div>
+    <div class="col-sm-4 m-5">
+      <form [formGroup]="exampleForm">
+        <div class="form-group">
+          <label>First Name:</label>
+          <input
+            class="form-control"
+            formControlName="firstName"
+            placeholder="John"
+          />
+          <label>Last Name:</label>
+          <input
+            class="form-control"
+            formControlName="lastName"
+            placeholder="Snow"
+          />
+          <label for="email">email <span class="req">*</span></label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="johnknowsnothing@gmail.com"
+          />
+          <label for="comments">comments</label>
+          <textarea
+            class="form-control"
+            cols="46"
+            rows="3"
+            name="comments"
+            placeholder="Do you travel outside of the US?  Our wedding will be in Westeros...."
+          ></textarea>
+        </div>
+        <!----- Email ----->
+
+        <button mat-raised-button color="primary" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+    <div class="col-sm-2"></div>
+    <!-- .row -->
+  </div>
+  <!-- .container -->
+</div>

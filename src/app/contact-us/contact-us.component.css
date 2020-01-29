@@ -1,0 +1,60 @@
+a {
+  font-weight: 200;
+  font-family: "Roboto";
+  font-size: 1em;
+  color: #121211 !important;
+  text-decoration: none !important;
+}
+.content-bkgd {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 1px;
+  margin: 10px;
+  padding: 10px;
+}
+form {
+  padding: 2.5em;
+  z-index: 100;
+}
+
+h2 {
+  color: #121211;
+  font-family: "Roboto";
+  font-size: 2.5em;
+  font-weight: 800;
+  margin: 1.5em 1em auto;
+  text-align: center;
+}
+
+input {
+  padding-bottom: 5px;
+  color: #121211 !important;
+  font-weight: 200;
+}
+
+p {
+  text-align: left;
+  margin-top: 40px;
+  font-weight: 200;
+  font-family: "Roboto";
+  font-size: 1.5em;
+  color: #121211 !important;
+}
+
+::placeholder {
+  color: #636363 !important;
+  margin: 5px;
+}
+textarea {
+  font-weight: 200;
+  padding: 5px;
+  height: 100px;
+}
+
+h2 {
+  text-align: center;
+  color: #121211;
+  font-weight: 800;
+  font-family: "Roboto";
+  font-size: 2.5em;
+  margin: 1.5em 1em auto;
+}

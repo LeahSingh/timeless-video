@@ -1,0 +1,130 @@
+/* IFRAME VIDEO CSS */
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #3a3838;
+}
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
+/* END IFRAME YUTUBE VIDEO CSS */
+
+.mat-toolbar.mat-primary {
+  background: transparent;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+span {
+  padding-right: 2rem;
+}
+a#login {
+  border: 2px solid #fff;
+  border-radius: 2px;
+  margin-left: 2em;
+}
+/* #homeVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+*/
+body {
+  margin: 0;
+  padding: 0;
+  /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: #333;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* The only rule that matters
+#video-background {
+  /*  making the video fullscreen
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+} */
+/*iframe {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 108%;
+  min-height: 108%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url("/assets/images/polina.jpg") no-repeat;
+  background-size: cover;
+
+  border: none;
+}
+*/
+.tl-logo {
+  font-family: "Rock Salt";
+  font-size: 1.15em;
+}
+a {
+  color: #fff;
+  padding: 0.15em 0.5em;
+  font-family: "Roboto";
+  font-size: 0.85em;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+app-footer {
+  background-color: #000;
+  position: fixed;
+}
+mat-toolbar {
+  background-color: transparent !important;
+}
+.navbar {
+  justify-content: space-between;
+  z-index: 500;
+}
+
+span {
+  padding-right: 1rem;
+}
+/*video#myVideo {
+  z-index: -100;
+}*/

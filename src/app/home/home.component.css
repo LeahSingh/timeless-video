@@ -1,0 +1,17 @@
+h1 {
+  top: 200px;
+  font-size: 12em;
+}
+h6 {
+  top: 450px;
+  font-size: 1em;
+}
+h1,
+h6 {
+  color: #fff;
+  font-family: "Rock Salt";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
