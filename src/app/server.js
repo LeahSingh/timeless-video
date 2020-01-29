@@ -1,11 +1,9 @@
 const express = require("express");
 const path = require("path");
-const ngApp = express();
+const app = express();
 
-ngApp.use(express.static("./dist/angular-forms-validation"));
-ngApp.get("/*", function(request, response) {
-  response.sendFile(
-    path.join(__dirname, "/dist/angular-forms-validation/index.html")
-  );
+app.use(express.static("./dist/tv"));
+app.get("/*", function(request, response) {
+  response.sendFile(path.join(__dirname, "/dist/atv/index.html"));
 });
-ngApp.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080);
